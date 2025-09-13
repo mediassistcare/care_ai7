@@ -1,0 +1,304 @@
+{
+  "session_id": "2025-09-13T00:14:00.506032",
+  "step_completed": 6,
+  "created_at": "2025-09-13T00:14:00.506032",
+  "data_timestamps": {},
+  "llm_timestamps": {},
+  "user_profile": {
+    "login_history": [
+      "2025-09-13T00:14:00.513602"
+    ],
+    "last_updated": "2025-09-13T00:14:00.514601",
+    "login_count": 1,
+    "username": "mo123",
+    "user_type": "medical_operator",
+    "preferred_language": "english",
+    "session_id": "76f237bf-bc33-47c5-8471-908ee15bef71",
+    "created_at": "2025-09-13T00:14:00.513602"
+  },
+  "session_info": {
+    "session_id": "76f237bf-bc33-47c5-8471-908ee15bef71",
+    "username": "mo123",
+    "created_at": "2025-09-13T00:14:00.506032",
+    "last_updated": "2025-09-13T01:58:39.140311",
+    "user_type": "medical_operator",
+    "preferred_language": "english",
+    "highest_step_completed": 6
+  },
+  "step1": {
+    "step_name": "Case Category Selection",
+    "form_data": {
+      "case_category": "illness"
+    },
+    "ai_generated_data": {},
+    "files_uploaded": {},
+    "timestamp": "2025-09-13T01:57:49.133898",
+    "data_source": "user_input",
+    "step_completed": true
+  },
+  "step2": {
+    "step_name": "Patient Registration",
+    "form_data": {
+      "full_name": "Arshiya Mirza",
+      "date_of_birth": "2013-06-09",
+      "gender": "female",
+      "address": "C/O: Arshad Ayyub, 21, rajendra nagar, Pratapgarh, Pratapgarh, Rajasthan - 312605",
+      "diabetes": "no",
+      "hypertension": "no",
+      "asthma": "no",
+      "heart_disease": "no",
+      "family_history": "none",
+      "other_medical_reports": "yes"
+    },
+    "ai_generated_data": {
+      "aadhaar_extraction": {
+        "aadhaar_number": "9667 8800 9134",
+        "address": "C/O: Arshad Ayyub, 21, rajendra nagar, Pratapgarh, Pratapgarh, Rajasthan - 312605",
+        "date_of_birth": "09/06/2013",
+        "extracted_from": "both sides",
+        "extraction_confidence": "high",
+        "full_name": "Arshiya Mirza",
+        "gender": "FEMALE"
+      }
+    },
+    "files_uploaded": {
+      "aadhar_combined": {
+        "filename": "aadhaar1.jpg",
+        "upload_timestamp": "2025-09-13T01:58:14.957658",
+        "field_name": "aadhar_combined",
+        "content_type": "image/jpeg"
+      }
+    },
+    "timestamp": "2025-09-13T01:58:14.969349",
+    "data_source": "user_input_and_extraction",
+    "step_completed": true
+  },
+  "step3": {
+    "step_name": "Vital Signs & Medical Photos",
+    "form_data": {
+      "temperature": "104",
+      "temperature_unit": "fahrenheit",
+      "oxygen_saturation": "80",
+      "blood_glucose": "300",
+      "glucose_timing": "random",
+      "lung_congestion": "none",
+      "water_in_lungs": "none",
+      "ecg_available": "no"
+    },
+    "ai_generated_data": {},
+    "files_uploaded": {},
+    "custom_medical_images": [],
+    "timestamp": "2025-09-13T01:58:28.924249",
+    "data_source": "user_input_and_analysis",
+    "step_completed": true
+  },
+  "step4": {
+    "step_name": "Medical Records & Contact Information",
+    "form_data": {},
+    "ai_generated_data": {
+      "generated_questions": "[{\"abnormal_finding\":\"Body Temperature: 104.0 \u00b0F (Elevated - Normal: 97.0-99.0 \u00b0F)\",\"medical_concern\":\"hyperthermia or febrile illness\",\"priority\":\"critical\",\"question\":\"Your body temperature is 104.0 \u00b0F, which indicates a high fever. Are you experiencing chills, sweating, or body aches?\"},{\"abnormal_finding\":\"Oxygen Saturation: 80.0 % (LOW - Normal: 95-100 %)\",\"medical_concern\":\"hypoxemia\",\"priority\":\"critical\",\"question\":\"Your oxygen saturation is 80%, which is significantly below normal. Are you experiencing shortness of breath, chest pain, or dizziness?\"},{\"abnormal_finding\":\"Blood Glucose: 300.0 mg/dL (ELEVATED - Normal: 70-140 mg/dL)\",\"medical_concern\":\"hyperglycemia\",\"priority\":\"critical\",\"question\":\"Your blood glucose level is 300.0 mg/dL, which is quite high. Are you experiencing increased thirst, frequent urination, or blurred vision?\"}]"
+    },
+    "files_uploaded": {},
+    "timestamp": "2025-09-13T01:58:39.140311",
+    "data_source": "user_input_and_analysis",
+    "step_completed": true
+  },
+  "step5": {
+    "step_name": "Complaints & Symptoms",
+    "form_data": {
+      "complaint_text": "fever"
+    },
+    "ai_generated_data": {},
+    "files_uploaded": {},
+    "timestamp": "2025-09-13T01:57:40.650141",
+    "data_source": "user_input_and_ai_analysis",
+    "step_completed": true
+  },
+  "step6": {
+    "step_name": "Analysis & Diagnosis",
+    "form_data": {
+      "assessment_completed": true,
+      "clinical_summary_saved": true,
+      "final_completion_timestamp": "2025-09-13T00:20:15.960045"
+    },
+    "ai_generated_data": {
+      "clinical_summary": "Clinical Summary\n\nPatient Information:\n- Name: Arshiya Mirza\n- Gender: Female\n- Age: Not documented\n- Medical History: Diabetes mellitus\n\nVital Signs:\n- Temperature: 104\u00b0C (Fever; significantly elevated)\n- Oxygen Saturation: 80% (Hypoxemia; indicates severe respiratory compromise)\n- Blood Glucose (random): 300 mg/dL (Hyperglycemia; poorly controlled diabetes)\n- Lung Congestion: None detected\n\nPresenting Complaints:\n- Chief Complaint: Fever\n\nClinical Findings:\n- Skin Lesion: A raised lesion observed on the skin characterized by a central vesicle surrounded by erythema. (Image provided: skin.jpeg)\n- Additional findings: No lung congestion noted; no other abnormalities documented\n- Vital signs indicate critical abnormalities including high fever and hypoxemia\n- No information provided regarding other systemic or localized symptoms\n\nAssessment Summary:\n- The patient presents with high-grade fever, hypoxemia, hyperglycemia, and a skin lesion featuring a central vesicle with surrounding erythema. The skin lesion suggests possible viral or bacterial infection. The clinical picture is complicated by severe hyperthermia and hypoxemia, with a history of diabetes mellitus. No additional clinical findings are documented.",
+      "summary_generated_at": "2025-09-13T00:20:15.960045",
+      "assessment_completed": true,
+      "final_review_status": "completed",
+      "questions_skipped": true,
+      "questions_answered": 0,
+      "original_questions": [
+        {
+          "category": "onset",
+          "options": [
+            "A few days ago",
+            "About a week ago",
+            "More than a week ago",
+            "I just saw it now",
+            "I'm not sure"
+          ],
+          "question": "When did you first notice the skin lesion or bump that concerns you?",
+          "relevance": "Understanding when the skin lesion appeared helps determine if it's recent or ongoing, which can guide diagnosis.",
+          "type": "multiple_choice"
+        },
+        {
+          "category": "characteristics",
+          "options": [
+            "It hurts",
+            "Itches",
+            "Feels tender or sore",
+            "No discomfort",
+            "Other"
+          ],
+          "question": "How does the skin bump feel\u2014does it hurt, itch, or bother you in any way?",
+          "relevance": "Knowing if the lesion is painful or itchy helps assess if it might be infected or irritated.",
+          "type": "multiple_choice"
+        },
+        {
+          "category": "characteristics",
+          "options": [
+            "Yes, it's getting bigger",
+            "Yes, it's changing color",
+            "Yes, spreading to other areas",
+            "No, it looks the same",
+            "I'm not sure"
+          ],
+          "question": "Have you noticed the skin lesion getting bigger, changing color, or spreading to nearby areas?",
+          "relevance": "Changes in the lesion's size or appearance can indicate infection or other skin issues that may need attention.",
+          "type": "multiple_choice"
+        },
+        {
+          "category": "associated symptoms",
+          "options": [
+            "Yes, I have a fever",
+            "Yes, I feel very tired",
+            "Yes, I have chills",
+            "No, I feel okay",
+            "I'm not sure"
+          ],
+          "question": "Since you noticed the lesion, have you experienced any other symptoms like fever, chills, or feeling very tired?",
+          "relevance": "Associated symptoms like fever or fatigue can suggest an infection or inflammation linked to the skin lesion.",
+          "type": "multiple_choice"
+        },
+        {
+          "category": "characteristics",
+          "options": [
+            "Yes, I feel more tired",
+            "No, I feel normal",
+            "I feel tired all the time",
+            "I'm not sure"
+          ],
+          "question": "Do you feel more tired or weak than usual, especially around the same time you noticed the skin change?",
+          "relevance": "Fatigue can be related to infections or other underlying conditions connected to skin issues.",
+          "type": "multiple_choice"
+        },
+        {
+          "category": "associated symptoms",
+          "options": [
+            "Yes, in other areas",
+            "No, only the skin lesion",
+            "Not sure"
+          ],
+          "question": "Have you recently had any new symptoms like pain, swelling, or redness in other parts of your body?",
+          "relevance": "Widespread redness or swelling might indicate a more systemic infection or inflammation.",
+          "type": "multiple_choice"
+        },
+        {
+          "category": "symptom impact",
+          "options": [
+            "Yes, movement is painful",
+            "No, movement is fine",
+            "I feel numbness or tingling",
+            "I'm not sure"
+          ],
+          "question": "Are you experiencing any difficulty or pain when moving or using the area where the skin lesion is located?",
+          "relevance": "Pain or difficulty moving can suggest the lesion is affecting deeper tissues or nerves.",
+          "type": "multiple_choice"
+        },
+        {
+          "category": "general symptoms",
+          "options": [
+            "Yes, I feel more feverish or sweaty",
+            "No change",
+            "I feel worse overall",
+            "I'm not sure"
+          ],
+          "question": "Have you noticed any changes in your overall feeling, like feeling more feverish or sweaty, since the skin issue appeared?",
+          "relevance": "Systemic feelings like fever or sweating can point to an infection or inflammatory process.",
+          "type": "multiple_choice"
+        }
+      ],
+      "analysis_metadata": {
+        "total_questions_generated": 8,
+        "questions_answered": 0,
+        "questions_skipped": true,
+        "completion_timestamp": "2025-09-12T18:50:12.920Z"
+      },
+      "total_questions_generated": 8,
+      "total_questions_answered": 0,
+      "completion_rate": 0.0,
+      "completed_at": "2025-09-13T00:20:12.928228",
+      "session_data": {
+        "questions_generated_from": {
+          "step3_vitals": true,
+          "step4_followups": true,
+          "step5_symptoms": true
+        },
+        "priority_distribution": {
+          "step5_priority": 0.8,
+          "step3_step4_priority": 0.2
+        }
+      }
+    },
+    "files_uploaded": {},
+    "timestamp": "2025-09-13T00:20:15.974570",
+    "data_source": "ai_analysis",
+    "step_completed": true
+  },
+  "step7": {},
+  "step_completion_status": {
+    "step1": {
+      "completed": true,
+      "timestamp": "2025-09-13T01:57:49.133898",
+      "form_fields_count": 1,
+      "ai_fields_count": 0,
+      "files_count": 0
+    },
+    "step2": {
+      "completed": true,
+      "timestamp": "2025-09-13T01:58:14.969349",
+      "form_fields_count": 10,
+      "ai_fields_count": 1,
+      "files_count": 1
+    },
+    "step3": {
+      "completed": true,
+      "timestamp": "2025-09-13T01:58:28.924249",
+      "form_fields_count": 8,
+      "ai_fields_count": 0,
+      "files_count": 0
+    },
+    "step4": {
+      "completed": true,
+      "timestamp": "2025-09-13T01:58:39.140311",
+      "form_fields_count": 0,
+      "ai_fields_count": 1,
+      "files_count": 0
+    },
+    "step5": {
+      "completed": true,
+      "timestamp": "2025-09-13T01:57:40.662837",
+      "form_fields_count": 1,
+      "ai_fields_count": 0,
+      "files_count": 0
+    },
+    "step6": {
+      "completed": true,
+      "timestamp": "2025-09-13T00:20:15.974570",
+      "form_fields_count": 3,
+      "ai_fields_count": 13,
+      "files_count": 0
+    }
+  }
+}

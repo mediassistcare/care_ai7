@@ -1,0 +1,137 @@
+{
+  "session_id": "2025-09-13T02:42:27.075098",
+  "step_completed": 4,
+  "created_at": "2025-09-13T02:42:27.075098",
+  "data_timestamps": {},
+  "llm_timestamps": {},
+  "user_profile": {
+    "login_history": [
+      "2025-09-13T02:42:27.075098"
+    ],
+    "last_updated": "2025-09-13T02:42:27.075098",
+    "login_count": 1,
+    "username": "m11",
+    "user_type": "medical_operator",
+    "preferred_language": "english",
+    "session_id": "97c7b6e5-e008-4cb6-a4bc-3154ee29fa3b",
+    "created_at": "2025-09-13T02:42:27.075098"
+  },
+  "session_info": {
+    "session_id": "97c7b6e5-e008-4cb6-a4bc-3154ee29fa3b",
+    "username": "m11",
+    "created_at": "2025-09-13T02:42:27.075098",
+    "last_updated": "2025-09-13T03:00:06.241266",
+    "user_type": "medical_operator",
+    "preferred_language": "english",
+    "highest_step_completed": 4
+  },
+  "step1": {
+    "step_name": "Case Category Selection",
+    "form_data": {
+      "case_category": "illness"
+    },
+    "ai_generated_data": {},
+    "files_uploaded": {},
+    "timestamp": "2025-09-13T02:42:30.751178",
+    "data_source": "user_input",
+    "step_completed": true
+  },
+  "step2": {
+    "step_name": "Patient Registration",
+    "form_data": {
+      "full_name": "Arshiya Mirza",
+      "date_of_birth": "2013-06-09",
+      "gender": "female",
+      "address": "C/O: Arshad Ayyub, 21, rajendra nagar, Pratapgarh, Pratapgarh, Rajasthan - 312605",
+      "diabetes": "no",
+      "hypertension": "no",
+      "asthma": "no",
+      "heart_disease": "no",
+      "family_history": "none",
+      "other_medical_reports": "yes"
+    },
+    "ai_generated_data": {
+      "aadhaar_extraction": {
+        "aadhaar_number": "9667 8800 9134",
+        "address": "C/O: Arshad Ayyub, 21, rajendra nagar, Pratapgarh, Pratapgarh, Rajasthan - 312605",
+        "date_of_birth": "09/06/2013",
+        "extracted_from": "front and back sides of the Aadhaar card",
+        "extraction_confidence": "high",
+        "full_name": "Arshiya Mirza",
+        "gender": "FEMALE"
+      }
+    },
+    "files_uploaded": {
+      "aadhar_combined": {
+        "filename": "aadhaar1.jpg",
+        "upload_timestamp": "2025-09-13T02:42:53.154488",
+        "field_name": "aadhar_combined",
+        "content_type": "image/jpeg"
+      }
+    },
+    "timestamp": "2025-09-13T02:42:53.165603",
+    "data_source": "user_input_and_extraction",
+    "step_completed": true
+  },
+  "step3": {
+    "step_name": "Vital Signs & Medical Photos",
+    "form_data": {
+      "temperature": "104",
+      "temperature_unit": "fahrenheit",
+      "oxygen_saturation": "80",
+      "blood_glucose": "300",
+      "glucose_timing": "random",
+      "lung_congestion": "none",
+      "water_in_lungs": "none",
+      "ecg_available": "no"
+    },
+    "ai_generated_data": {},
+    "files_uploaded": {},
+    "custom_medical_images": [],
+    "timestamp": "2025-09-13T02:42:59.664646",
+    "data_source": "user_input_and_analysis",
+    "step_completed": true
+  },
+  "step4": {
+    "step_name": "Medical Records & Contact Information",
+    "form_data": {},
+    "ai_generated_data": {},
+    "files_uploaded": {},
+    "timestamp": "2025-09-13T03:00:06.241266",
+    "data_source": "user_input_and_analysis",
+    "step_completed": true
+  },
+  "step5": {},
+  "step6": {},
+  "step7": {},
+  "step_completion_status": {
+    "step1": {
+      "completed": true,
+      "timestamp": "2025-09-13T02:42:30.751178",
+      "form_fields_count": 1,
+      "ai_fields_count": 0,
+      "files_count": 0
+    },
+    "step2": {
+      "completed": true,
+      "timestamp": "2025-09-13T02:42:53.165603",
+      "form_fields_count": 10,
+      "ai_fields_count": 1,
+      "files_count": 1
+    },
+    "step3": {
+      "completed": true,
+      "timestamp": "2025-09-13T02:42:59.664646",
+      "form_fields_count": 8,
+      "ai_fields_count": 0,
+      "files_count": 0
+    },
+    "step4": {
+      "completed": true,
+      "timestamp": "2025-09-13T03:00:06.241266",
+      "form_fields_count": 0,
+      "ai_fields_count": 0,
+      "files_count": 0
+    }
+  }
+}
